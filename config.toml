@@ -1,3 +1,61 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://vaibhavk.github.io"
+DefaultContentLanguage = "en"
+#DefaultContentLanguage = "ja"
+title = "Vaibhav Kaushik"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+disqusShortname = "vaibhavkaushik"
+#googleAnalytics = "XXX"
+
+[Params]
+#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  subtitle = "An everyday journal of FLOSS Enthusiast"
+  logo = "img/avatar-icon.png"
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  useHLJS = true
+# socialShare = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+  name = "Vaibhav Kaushik"
+  website = "vaibhavk.github.io"
+  email = "vaibhavkaushik@disroot.org"
+  github = "vaibhavk"
+  gitlab = "vaibhav_kaushik"
+# twitter = "username"
+  reddit = "homuncculus"
+  linkedin = "vaibhav-kaushik-35b08383"
+  stackoverflow = "users/9907905/vaibhav-kaushik"
+  telegram = "homuncculus"
+
+[[menu.main]]
+    name = "Blog"
+    url = "post/"
+    weight = 1
+
+[[menu.main]]
+    name = "About Me"
+    url = "about"
+    weight = 2
