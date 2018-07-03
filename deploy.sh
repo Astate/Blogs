@@ -2,6 +2,7 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+hugo -d ../vaibhavk.github.io/
 cd ../vaibhavk.github.io
 
 if [[ $(git status -s) ]]
