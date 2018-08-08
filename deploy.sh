@@ -10,8 +10,9 @@ then
     cd ../$(dirname "$0")
     exit 1;
 fi
-cd -
+cd ../Blogs
 hugo -d ../vaibhavk.github.io/
+cd ../vaibhavk.github.io
 # Add changes to git
 git add --all
 # Commit changes
