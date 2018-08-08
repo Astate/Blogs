@@ -2,7 +2,6 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-hugo -d ../vaibhavk.github.io/
 cd ../vaibhavk.github.io
 
 if [[ $(git status -s) ]]
@@ -11,6 +10,8 @@ then
     cd ../$(dirname "$0")
     exit 1;
 fi
+cd -
+hugo -d ../vaibhavk.github.io/
 # Add changes to git
 git add --all
 # Commit changes

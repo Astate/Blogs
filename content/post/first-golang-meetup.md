@@ -1,12 +1,14 @@
 ---
 title: "First Golang Meetup"
-date: 2018-07-22T17:37:00+05:30
+date : 2018-08-08T17:48:16+05:30
 draft: false
 ---
 
 Saturday 21-July-2018, was the first meetup of Gurgaon Golang meetup and also my first Golang meetup. Organised at [Grofers](https://grofers.com) Headquater, Gurgaon for all the gophers in Delhi-NCR.
 
-![Group Photo](img/highres_473080962.jpeg)
+
+{{< figure src="https://secure.meetupstatic.com/photos/event/a/0/0/2/highres_473080962.jpeg" title="Group Photo" >}}
+
 
 Everybody was already half way through the Q/A session when I reached (I was late). Kasisnu was giving a demo of an exercise from the Go book (TCP server that periodically writes the time). You can read the source code of the Exercise from [here](https://github.com/adonovan/gopl.io/blob/master/ch8/clock1/clock.go).
 
@@ -16,9 +18,9 @@ During introductions, [Melvin](https://twitter.com/melvinodsa) talked about his 
 It was networking break, Grofers provided us with pizzas and cold-drinks and to keep the fun going.There was also a quiz with prize for the winner. The attendees were asked to solve the problems of [this repository](https://github.com/kasisnu/golang-meetup-1) and the people with PRs would be given prize, isn't it interesting? Experienced **The Best networking** while sharing pizza and discussing the solutions of the problem.  
 After the break, when everyone was done with there snacks it was lightning sessions’ turn.Lightening session given by [Yash Mehrotra](https://yashmehrotra.com) who introduced us to Grofers' [go-codon](https://github.com/grofers/go-codon) which generates Go server code from a combination of REST and Workflow DSLs. The concept was fairly new to me but people were excited to know about it.All we have to do is place swagger specification for all our upstream APIs in the folder _spec/clients_ in config.yml format and then these will be converted to client libraries. For more detailed explaination refer this [wiki](https://github.com/grofers/go-codon/wiki)
 
-For a surprize, we had another round of pizzas for everyone (because of our humble host Kasisnu). While everyone was excited about it [Madhukar Mishra](https://www.linkedin.com/in/madhukar-mishra-b55593b8) began with his talk  on Go's concurrency model. Stating with first and foremost misunderstanding, _Concurrency is not Parallelism_ refer [this talk](https://vimeo.com/49718712) for clear insite. Go follows **communicating sequential processes**(CSP) model of concurrency which requires:
- * concurrently executing entities
- * communicating by sending “messages” to each other
+For a surprize, we had another round of pizzas for everyone (because of our humble host Kasisnu). While everyone was excited about it [Madhukar Mishra](https://www.linkedin.com/in/madhukar-mishra-b55593b8) began with his talk  on Go's concurrency model. Stating with first and foremost misunderstanding, _Concurrency is not Parallelism_ refer [this talk](https://vimeo.com/49718712) for clear insite. Go follows **communicating sequential processes**(CSP) model of concurrency which requires:  
+ * concurrently executing entities  
+ * communicating by sending “messages” to each other  
 A very basic and easy example to understand this model is by looking at \*NIX pipes. To help in understanding the go concurrency let's go through some examples.
 {{< highlight golang >}}
 func main() {
